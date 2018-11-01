@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:ignore="ContentDescription"
+    >
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+        android:foreground="@color/poster_overlay"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:paddingTop="@dimen/spacing_medium"
+        android:paddingBottom="@dimen/spacing_large"
+        android:paddingStart="@dimen/text_offset"
+        android:paddingEnd="@dimen/spacing_large"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="@dimen/thumb_elevation"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+            android:textColor="?android:textColorPrimary"
+            tools:text="The Mighty Title"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="?android:textColorSecondary"
+            tools:text="This is a description"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/thumb_width"
+        android:layout_height="@dimen/thumb_height"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/spacing_large"
+        android:background="@android:color/white"
+        android:scaleType="centerCrop"
+        android:elevation="@dimen/thumb_elevation"
+        />
+
+</FrameLayout>

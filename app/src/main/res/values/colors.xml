@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFEFEFE</color>
+    <color name="colorPrimaryDark">#FFFEFEFE</color>
+    <color name="colorAccent">#FFEF6C53</color>
+
+    <color name="poster_overlay">#1A000000</color>
+</resources>

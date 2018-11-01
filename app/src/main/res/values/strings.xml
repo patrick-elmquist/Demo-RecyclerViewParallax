@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TV Shows</string>
+
+    <string name="parallax_state_enabled">With parallax</string>
+    <string name="parallax_state_disabled">Without parallax</string>
+
+    <string name="the_grand_tour_title">The Grand Tour</string>
+    <string name="the_grand_tour_description">Follow Jeremy, Richard, and James, as they embark on an adventure across the globe.</string>
+
+    <string name="daredevil_title">"Daredevil"</string>
+    <string name="daredevil_description">"A blind lawyer by day, vigilante by night. Matt Murdock fights the crime of New York as Daredevil."</string>
+
+    <string name="john_oliver_title">Last Week Tonight with John Oliver</string>
+    <string name="john_oliver_description">Former Daily Show host and correspondent John Oliver brings his persona to this new weekly news satire program.</string>
+
+</resources>
