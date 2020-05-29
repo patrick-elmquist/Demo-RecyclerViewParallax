@@ -44,7 +44,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(toolbar)
 
         setupList(topList, parallax = true)
         setupList(bottomList, parallax = false)
@@ -136,10 +135,10 @@ class MainActivity : AppCompatActivity() {
             val bottomAlpha = if (bottomList == activeView) ACTIVE_ALPHA else DISABLED_ALPHA
 
             playTogether(
-                ObjectAnimator.ofFloat(topLabel, View.ALPHA, topAlpha),
-                ObjectAnimator.ofFloat(topList, View.ALPHA, topAlpha),
-                ObjectAnimator.ofFloat(bottomLabel, View.ALPHA, bottomAlpha),
-                ObjectAnimator.ofFloat(bottomList, View.ALPHA, bottomAlpha)
+                    ObjectAnimator.ofFloat(topLabel, View.ALPHA, topAlpha),
+                    ObjectAnimator.ofFloat(topList, View.ALPHA, topAlpha),
+                    ObjectAnimator.ofFloat(bottomLabel, View.ALPHA, bottomAlpha),
+                    ObjectAnimator.ofFloat(bottomList, View.ALPHA, bottomAlpha)
             )
 
             doOnEnd { onFinishedAction() }

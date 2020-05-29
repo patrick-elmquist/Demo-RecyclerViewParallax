@@ -1,73 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:clipChildren="false"
-    >
+    android:layout_height="wrap_content">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        app:title="@string/app_name"
-        app:titleTextAppearance="@style/AppTheme.Title"
-        />
-
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="@dimen/spacing_medium"
-        />
-
-    <TextView
-        android:id="@+id/topLabel"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/spacing_tiny"
-        android:layout_marginStart="@dimen/spacing_large"
-        android:layout_marginEnd="@dimen/spacing_large"
-        android:text="@string/parallax_state_enabled"
-        android:textAppearance="@style/AppTheme.Label"
-        />
+        android:clipChildren="false"
+        android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/topList"
-        android:layout_width="match_parent"
-        android:layout_height="260dp"
-        android:background="@android:color/black"
-        android:elevation="@dimen/list_elevation"
-        />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_medium" />
 
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="@dimen/spacing_huge"
-        />
+        <TextView
+            android:id="@+id/topLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_tiny"
+            android:text="@string/parallax_state_enabled"
+            android:textAppearance="@style/AppTheme.Label"
+            android:textColor="@android:color/black" />
 
-    <TextView
-        android:id="@+id/bottomLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/spacing_tiny"
-        android:layout_marginStart="@dimen/spacing_large"
-        android:layout_marginEnd="@dimen/spacing_large"
-        android:text="@string/parallax_state_disabled"
-        android:textAppearance="@style/AppTheme.Label"
-        />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topList"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@android:color/black"
+            android:elevation="@dimen/list_elevation" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/bottomList"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@android:color/black"
-        android:elevation="@dimen/list_elevation"
-        />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_huge" />
 
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="@dimen/spacing_huge"
-        />
+        <TextView
+            android:id="@+id/bottomLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_tiny"
+            android:text="@string/parallax_state_disabled"
+            android:textAppearance="@style/AppTheme.Label"
+            android:textColor="@android:color/black" />
 
-</LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bottomList"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@android:color/black"
+            android:elevation="@dimen/list_elevation" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_huge" />
+
+    </LinearLayout>
+</ScrollView>
